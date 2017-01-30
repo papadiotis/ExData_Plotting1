@@ -20,3 +20,5 @@ hist(as.numeric(data_i_caree_about$Global_active_power),
                 
 ## Closing the png device
 dev.off()  
+
+## THE END
