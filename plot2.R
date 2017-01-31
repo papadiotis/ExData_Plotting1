@@ -1,8 +1,5 @@
 ## loading the libraries we need
-library(data.table)
-library(dplyr)
-library(magrittr)
-library(lubridate)
+pacman::p_load(data.table, dplyr, magrittr, lubridate)
 
 ## Setting the working directory
 setwd("D:/portofolio/R Programming/Exploratory Data Analysis")
@@ -13,7 +10,7 @@ download.file(fileUrl, destfile = "./household_power_consumption.zip")
 file <- unzip("./household_power_consumption.zip")
 
 ## Reading the data
-data1 <- fread("household_power_consumption.txt", na.strings = "?",
+data1 <- fread(file, na.strings = "?",
                colClasses = c("date","time","integer","integer","integer","integer","integer","integer","integer"))
 
 ## An alternaive way of reading them
