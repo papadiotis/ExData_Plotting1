@@ -30,7 +30,7 @@ select(- Date, - Time)
   ## Converting the date_time column from character to POSIX [you can confirm with the function class(data2$date_time)]
   data1$date_time <- dmy_hms(data1$date_time)
 
-## PGN - Plot  ---------------------------------------------------------------------------------------------------------
+## PNG - Plot  ---------------------------------------------------------------------------------------------------------
 ## Opening the png device
 png("plot2.png", width=480, height=480)
 
